@@ -1,0 +1,2904 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كاميرا المراقبة الشمسية الذكية - CAMEMAROC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="كاميرا مراقبة ذكية تعمل بالطاقة الشمسية - حماية متكاملة لمنزلك مع تقنية متطورة وطاقة مستدامة">
+    <meta name="keywords" content="كاميرا مراقبة, كاميرا شمسية, مراقبة ذكية, حماية المنزل, كاميرا 4G">
+    <meta property="og:title" content="كاميرا المراقبة الشمسية الذكية - CAMEMAROC">
+    <meta property="og:description" content="حماية متكاملة لمنزلك مع تقنية متطورة وطاقة مستدامة">
+    <meta property="og:image" content="https://placehold.co/1200x630/2ecc71/ffffff?text=CAMEMAROC">
+    <meta property="og:url" content="https://spsc.prumysl.ma">
+    <link rel="canonical" href="https://spsc.prumysl.ma">
+    <link rel="icon" type="image/png" href="https://placehold.co/32x32/2ecc71/ffffff?text=CAMEMAROC">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #2ecc71;
+            --secondary-color: #27ae60;
+            --accent-color: #e74c3c;
+            --text-color: #2c3e50;
+            --light-bg: #f8f9fa;
+            --dark-bg: #2c3e50;
+            --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --shadow-lg: 0 8px 24px rgba(0,0,0,0.1);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --section-padding: 4rem 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+
+        /* Enhanced Header */
+        .header {
+            background: transparent;
+            padding: 1rem;
+            box-shadow: none;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            border-bottom: none;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            margin: 0 10px;
+            width: calc(100% - 20px);
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover img {
+            transform: scale(1.05);
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .header-cta {
+            background: var(--gradient);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255,255,255,0.2),
+                transparent
+            );
+            transition: var(--transition);
+        }
+
+        .header-cta:hover::before {
+            left: 100%;
+        }
+
+        /* Enhanced Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/villa-hero.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 1rem;
+            margin-top: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to top, var(--light-bg), transparent);
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 150px;
+            background: linear-gradient(to top, var(--light-bg), transparent);
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 2rem;
+            background: rgba(0,0,0,0.8);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-content::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(46, 204, 113, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .hero-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: white;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 300px;
+            margin: 1rem auto;
+            border: 4px solid white;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .hero-image:hover {
+            transform: scale(1.02);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .hero-badges {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(46, 204, 113, 0.2);
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            border: 1px solid rgba(46, 204, 113, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .badge:hover {
+            background: rgba(46, 204, 113, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .badge i {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .hero-badges {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                margin-top: 1rem;
+                width: 100%;
+                max-width: 250px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .badge {
+                padding: 0.5rem;
+                font-size: 0.9rem;
+                justify-content: center;
+                width: 100%;
+                background: rgba(46, 204, 113, 0.15);
+                border: none;
+            }
+
+            .badge i {
+                font-size: 1rem;
+            }
+        }
+
+        /* Section Styles */
+        .section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            position: relative;
+            max-width: var(--container-width);
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 1rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--text-color);
+            margin-bottom: 0.8rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 1rem auto 0;
+        }
+
+        /* Features Section */
+        .features {
+            padding: var(--section-padding);
+            background: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-card i {
+            font-size: 3.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover i {
+            transform: scale(1.1);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            padding: var(--section-padding);
+            background: var(--light-bg);
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .step {
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 20px;
+            background: var(--light-bg);
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+
+        /* Technical Specifications */
+        .specs {
+            padding: var(--section-padding);
+            background: white;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .spec-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .spec-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .spec-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .spec-list {
+            list-style: none;
+        }
+
+        .spec-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .spec-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Mobile App Section */
+        .mobile-app {
+            padding: var(--section-padding);
+            background: linear-gradient(145deg, #ffffff, var(--light-bg));
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 1rem;
+            align-items: center;
+        }
+
+        .app-preview {
+            position: relative;
+            text-align: center;
+        }
+
+        .app-preview img {
+            width: 100%;
+            max-width: 280px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 40px;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+        }
+
+        .app-preview img:hover {
+            transform: translateY(-10px);
+        }
+
+        .qr-code {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 1.2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .qr-code:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .qr-code img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 0.5rem;
+        }
+
+        .qr-code p {
+            color: var(--text-color);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .app-features {
+            text-align: right;
+            padding: 1.5rem;
+        }
+
+        .app-features h3 {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .app-features h3::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.8rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .feature-list li:hover {
+            transform: translateX(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-list i {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(46, 204, 113, 0.1);
+            border-radius: 10px;
+        }
+
+        .feature-list span {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .app-badges {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            justify-content: flex-end;
+        }
+
+        .app-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .app-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .app-badge i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .app-badge span {
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --section-padding: 3rem 1rem;
+            }
+
+            .section-title {
+                margin-bottom: 2rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .feature-card,
+            .step,
+            .spec-card,
+            .testimonial-card {
+                padding: 1.2rem;
+            }
+
+            .app-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .form-container {
+                padding: 2rem 1.5rem;
+            }
+
+            .footer-grid {
+                gap: 2rem;
+            }
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: var(--section-padding);
+            background: var(--light-bg);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            background: white;
+            padding: 1.2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            transform: translateX(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .faq-question {
+            font-weight: 500;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-color);
+        }
+
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            display: none;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: var(--section-padding);
+            background: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .testimonial-card {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .rating {
+            color: #f1c40f;
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+
+        .testimonial-card p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .testimonial-card h4 {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial-card .location {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-bg);
+            color: white;
+            padding: 3rem 1rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: var(--container-width);
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            text-align: center;
+        }
+
+        .footer-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: block;
+            margin-bottom: 0.8rem;
+            text-align: center;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            justify-content: center;
+        }
+
+        .social-links a {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Sticky Elements */
+        .sticky-whatsapp {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            z-index: 1000;
+            transition: var(--transition);
+            animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            text-decoration: none;
+        }
+
+        .sticky-whatsapp:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            text-decoration: none;
+            color: white;
+        }
+
+        .sticky-order {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--gradient);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+            z-index: 1000;
+            transition: var(--transition);
+            font-weight: 500;
+            animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .sticky-order:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        @media (max-width: 768px) {
+            .sticky-order {
+                right: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                border-radius: 0;
+                text-align: center;
+                padding: 1rem;
+                font-size: 1.1rem;
+            }
+
+            .sticky-whatsapp {
+                bottom: 80px;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Enhanced Loading Animation */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loading-spinner {
+            border: 4px solid rgba(46, 204, 113, 0.1);
+            border-top: 4px solid var(--primary-color);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Trust Badges Section */
+        .trust-badges {
+            background: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .trust-badges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .trust-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .trust-badge i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .trust-badge span {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .counter {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        /* Product Showcase */
+        .product-showcase {
+            padding: var(--section-padding);
+            background: var(--light-bg);
+        }
+
+        .showcase-grid {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .product-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .gallery-main {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .gallery-main::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 80%, rgba(0,0,0,0.1));
+            pointer-events: none;
+        }
+
+        .gallery-main img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery-thumbs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+        }
+
+        .gallery-thumb {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .gallery-thumb::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.1);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-thumb:hover::after {
+            opacity: 1;
+        }
+
+        .gallery-thumb img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Print Styles */
+        @media print {
+            .header,
+            .sticky-whatsapp,
+            .sticky-order,
+            .live-chat {
+                display: none;
+            }
+
+            .form-container {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+
+        /* Restore missing styles */
+        /* How It Works */
+        .how-it-works {
+            padding: 4rem 1rem;
+            background: white;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .step {
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 20px;
+            background: var(--light-bg);
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+
+        /* Technical Specifications */
+        .specs {
+            padding: 4rem 1rem;
+            background: var(--light-bg);
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .spec-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .spec-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .spec-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .spec-list {
+            list-style: none;
+        }
+
+        .spec-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .spec-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Enhanced Mobile App Section */
+        .mobile-app {
+            padding: 6rem 1rem;
+            background: linear-gradient(145deg, #ffffff, var(--light-bg));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mobile-app::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient);
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .app-preview {
+            position: relative;
+            text-align: center;
+        }
+
+        .app-preview img {
+            width: 100%;
+            max-width: 280px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 40px;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+        }
+
+        .app-preview img:hover {
+            transform: translateY(-10px);
+        }
+
+        .qr-code {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 1.2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .qr-code:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .qr-code img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 0.5rem;
+        }
+
+        .qr-code p {
+            color: var(--text-color);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .app-features {
+            text-align: right;
+            padding: 1.5rem;
+        }
+
+        .app-features h3 {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .app-features h3::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.8rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .feature-list li:hover {
+            transform: translateX(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-list i {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(46, 204, 113, 0.1);
+            border-radius: 10px;
+        }
+
+        .feature-list span {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .app-badges {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            justify-content: flex-end;
+        }
+
+        .app-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .app-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .app-badge i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .app-badge span {
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        @media (max-width: 768px) {
+            .app-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .app-features {
+                text-align: center;
+                padding: 1rem;
+            }
+
+            .app-features h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .feature-list li {
+                justify-content: center;
+            }
+
+            .app-badges {
+                justify-content: center;
+            }
+
+            .qr-code {
+                position: relative;
+                margin: 2rem auto 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                right: auto;
+                bottom: auto;
+                padding: 1.5rem;
+            }
+
+            .qr-code img {
+                margin: 0 auto 0.8rem;
+            }
+
+            .qr-code p {
+                text-align: center;
+            }
+        }
+
+        /* Enhanced Countdown Styles */
+        .countdown {
+            background: linear-gradient(145deg, rgba(46, 204, 113, 0.1), rgba(39, 174, 96, 0.1));
+            border: 1px solid rgba(46, 204, 113, 0.2);
+            border-radius: 12px;
+            padding: 1.2rem;
+            margin: 1.5rem 0;
+            transition: var(--transition);
+        }
+
+        .countdown p {
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .countdown-item {
+            background: white;
+            padding: 0.8rem;
+            border-radius: 8px;
+            min-width: 60px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .countdown-item:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .countdown-item.urgent {
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .countdown-item span {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-shadow: 0 2px 4px rgba(46, 204, 113, 0.1);
+            margin-bottom: 0.2rem;
+        }
+
+        .countdown-item small {
+            font-size: 0.8rem;
+            color: #666;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .countdown {
+                padding: 1rem;
+            }
+
+            .countdown-item {
+                min-width: 50px;
+                padding: 0.6rem;
+            }
+
+            .countdown-item span {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Form Section */
+        .order-form {
+            padding: var(--section-padding);
+            background: linear-gradient(145deg, #f8f9fa, #ffffff);
+            text-align: center;
+        }
+
+        .form-container-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .form-container {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            position: relative;
+            overflow: visible;
+            border: 1px solid rgba(46, 204, 113, 0.1);
+        }
+
+        .price-tag {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: var(--accent-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .compare-price {
+            font-size: 1rem;
+            text-decoration: line-through;
+            opacity: 0.8;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .current-price {
+            font-size: 1.4rem;
+            color: white;
+        }
+
+        .form-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid rgba(46, 204, 113, 0.1);
+        }
+
+        .form-header h2 {
+            font-size: 1.8rem;
+            color: var(--text-color);
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .form-header p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+            position: relative;
+            text-align: center;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 1rem;
+            padding-right: 3rem;
+            border: 2px solid #eee;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: #f8f9fa;
+            text-align: center;
+        }
+
+        .form-group input:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.1);
+            background: white;
+        }
+
+        .form-group i {
+            position: absolute;
+            right: 1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus + i {
+            color: var(--primary-color);
+        }
+
+        .quantity-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 15px;
+            border: 2px solid #eee;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .popular-choice-label {
+            position: absolute;
+            top: -12px;
+            right: 50%;
+            transform: translateX(50%);
+            background: #e74c3c;
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: none;
+            animation: fadeIn 0.3s ease;
+            white-space: nowrap;
+            box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
+        }
+
+        .popular-choice-label.show {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translate(-50%, 10px); }
+            to { opacity: 1; transform: translate(-50%, 0); }
+        }
+
+        .quantity-group:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.1);
+        }
+
+        .quantity-btn {
+            background: white;
+            border: 2px solid var(--primary-color);
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--primary-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quantity-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: var(--primary-color);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s, height 0.3s;
+            z-index: 0;
+        }
+
+        .quantity-btn:hover::before {
+            width: 100%;
+            height: 100%;
+        }
+
+        .quantity-btn:hover {
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(46, 204, 113, 0.2);
+        }
+
+        .quantity-btn:active {
+            transform: translateY(0);
+        }
+
+        .quantity-btn i {
+            position: relative;
+            z-index: 1;
+        }
+
+        .quantity-input {
+            width: 60px !important;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border: none !important;
+            background: transparent !important;
+            padding: 0 !important;
+            color: var(--text-color);
+            position: relative;
+            z-index: 1;
+        }
+
+        .quantity-input::-webkit-inner-spin-button,
+        .quantity-input::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .quantity-label {
+            position: absolute;
+            top: -10px;
+            right: 15px;
+            background: white;
+            padding: 0 10px;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .discount-badge {
+            background: rgba(46, 204, 113, 0.1);
+            color: var(--primary-color);
+            padding: 0.8rem 1.2rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            margin: 0.5rem 0 1.5rem;
+            display: none;
+            font-weight: 500;
+            border: 1px solid rgba(46, 204, 113, 0.2);
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .discount-badge.show {
+            display: inline-block;
+        }
+
+        .submit-btn {
+            background: var(--gradient);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+
+        .submit-btn::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .submit-btn:hover::after {
+            width: 300px;
+            height: 300px;
+        }
+
+        .submit-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .form-message {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .form-message.success {
+            background: rgba(46, 204, 113, 0.1);
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .form-message.error {
+            background: rgba(231, 76, 60, 0.1);
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 2rem 1.5rem;
+                margin: 0 1rem;
+            }
+
+            .price-tag {
+                position: relative;
+                top: 0;
+                right: 0;
+                display: inline-block;
+                margin-bottom: 1.5rem;
+            }
+
+            .form-group input {
+                padding: 0.8rem;
+                font-size: 1rem;
+            }
+
+            .submit-btn {
+                padding: 0.8rem;
+                font-size: 1rem;
+            }
+
+            .quantity-group {
+                padding: 0.6rem;
+            }
+
+            .quantity-btn {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        /* Order Form Section Updates */
+        .form-container-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .form-container {
+            max-width: 100%;
+            margin: 0;
+        }
+
+        /* Bulk Order Container Styles */
+        .bulk-order-container {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            position: relative;
+            overflow: visible;
+            border: 1px solid rgba(46, 204, 113, 0.1);
+        }
+
+        .bulk-order-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid rgba(46, 204, 113, 0.1);
+        }
+
+        .bulk-order-header h2 {
+            font-size: 1.8rem;
+            color: var(--text-color);
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .bulk-order-header p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .bulk-benefits {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--light-bg);
+            border-radius: 15px;
+            transition: var(--transition);
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .benefit-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .benefit-item h3 {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-item p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .bulk-contact {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid #eee;
+        }
+
+        .bulk-contact h3 {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .contact-btn.whatsapp {
+            background: #25d366;
+            color: white;
+        }
+
+        .contact-btn.phone {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        @media (max-width: 768px) {
+            .form-container-wrapper {
+                grid-template-columns: 1fr;
+            }
+            
+            .bulk-order-container {
+                padding: 1.5rem;
+            }
+            
+            .contact-methods {
+                flex-direction: column;
+            }
+            
+            .contact-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Free Gift Badge Styles */
+        .free-gift-badge {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--accent-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            animation: bounce 2s infinite;
+        }
+
+        .free-gift-badge i {
+            font-size: 1.2rem;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        @media (max-width: 768px) {
+            .free-gift-badge {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin: 1rem auto;
+                display: inline-flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="https://placehold.co/200x80/2ecc71/ffffff?text=CAMEMAROC" alt="CAMEMAROC Logo">
+            </a>
+            <a href="#orderForm" class="header-cta">اطلب الآن</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>كاميرا مراقبة ذكية تعمل بالطاقة الشمسية</h2>
+            <img src="images/Hero-cam.png" alt="كاميرا المراقبة الذكية" class="hero-image">
+            <p>حماية متكاملة لمنزلك مع تقنية متطورة وطاقة مستدامة</p>
+            <div class="hero-badges">
+                <div class="badge">
+                    <i class="fas fa-truck"></i>
+                    توصيل مجاني
+                </div>
+                <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    ضمان سنة
+                </div>
+                <div class="badge">
+                    <i class="fas fa-sun"></i>
+                    طاقة شمسية
+                </div>
+                <div class="badge">
+                    <i class="fas fa-mobile-alt"></i>
+                    مراقبة عن بعد
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section class="order-form" id="orderForm">
+        <div class="form-container-wrapper">
+            <div class="form-container">
+                <div class="price-tag">
+                    <span class="compare-price">1299 درهم</span>
+                    <span class="current-price">1049 درهم</span>
+                </div>
+                <div class="free-gift-badge">
+                    <i class="fas fa-gift"></i>
+                    <span>هدية مجانية: بطاقة ذاكرة 64GB</span>
+                </div>
+                <div class="form-header">
+                    <h2>اطلب الآن</h2>
+                    <p>سعر خاص لفترة محدودة مع هدية مجانية</p>
+                    <div class="countdown">
+                        <p>ينتهي العرض خلال:</p>
+                        <div class="countdown-timer">
+                            <div class="countdown-item">
+                                <span id="hours">24</span>
+                                <small>ساعة</small>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="minutes">00</span>
+                                <small>دقيقة</small>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="seconds">00</span>
+                                <small>ثانية</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form id="orderForm" onsubmit="submitForm(event)">
+                    <div class="quantity-group">
+                        <span class="quantity-label">الكمية</span>
+                        <div class="popular-choice-label">الأكثر اختياراً!</div>
+                        <button type="button" class="quantity-btn" onclick="decreaseQuantity()">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <input type="number" class="quantity-input" id="quantity" value="1" min="1" readonly>
+                        <button type="button" class="quantity-btn" onclick="increaseQuantity()">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="discount-badge" id="discountBadge"></div>
+                    <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="fullName" placeholder="الاسم الكامل" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="address" placeholder="العنوان الكامل" required>
+                    </div>
+                    <button type="submit" class="submit-btn">تأكيد الطلب</button>
+                </form>
+            </div>
+
+            <div class="bulk-order-container">
+                <div class="bulk-order-header">
+                    <h2>طلب بالجملة</h2>
+                    <p>للمتاجر والشركات</p>
+                </div>
+                <div class="bulk-order-content">
+                    <div class="bulk-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-tags"></i>
+                            <h3>أسعار خاصة</h3>
+                            <p>خصومات تصل إلى 30% للطلبات الكبيرة</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-tools"></i>
+                            <h3>تركيب سهل و سريع</h3>
+                            <p>فريق متخصص للتركيب والصيانة</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-headset"></i>
+                            <h3>خدمة ما بعد البيع</h3>
+                            <p>دعم فني متميز وخدمة عملاء على مدار الساعة</p>
+                        </div>
+                    </div>
+                    <div class="bulk-contact">
+                        <h3>تواصل معنا للطلب بالجملة</h3>
+                        <div class="contact-methods">
+                            <a href="https://wa.me/212XXXXXXXXX" class="contact-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                واتساب
+                            </a>
+                            <a href="tel:06XXXXXXXX" class="contact-btn phone">
+                                <i class="fas fa-phone"></i>
+                                اتصال
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="product-showcase">
+        <div class="section-title">
+            <h2>تعرف على الكاميرا</h2>
+            <p>جودة عالية وتقنية متطورة</p>
+        </div>
+        <div class="showcase-grid">
+            <div class="product-gallery">
+                <div class="gallery-main">
+                    <img src="images/R1231040-01.png" alt="كاميرا المراقبة">
+                </div>
+                <div class="gallery-thumbs">
+                    <div class="gallery-thumb active">
+                        <img src="images/R1231040-01.png" alt="زاوية 1">
+                    </div>
+                    <div class="gallery-thumb">
+                        <img src="images/R1231040-01.png" alt="زاوية 2">
+                    </div>
+                    <div class="gallery-thumb">
+                        <img src="images/R1231040-01.png" alt="زاوية 3">
+                    </div>
+                    <div class="gallery-thumb">
+                        <img src="images/R1231040-01.png" alt="زاوية 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="section-title">
+            <h2>كيف تعمل الكاميرا</h2>
+            <p>تركيب سهل واستخدام بسيط</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>التركيب</h3>
+                <p>تركيب سريع في أي مكان مع وجود الشمس</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>التوصيل</h3>
+                <p>تحميل التطبيق وربط الكاميرا بالهاتف</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>المراقبة</h3>
+                <p>متابعة منزلك من أي مكان في العالم</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="specs">
+        <div class="section-title">
+            <h2>المواصفات التقنية</h2>
+            <p>تقنية متطورة وأداء عالي</p>
+        </div>
+        <div class="specs-grid">
+            <div class="spec-card">
+                <h3><i class="fas fa-camera"></i> الكاميرا</h3>
+                <ul class="spec-list">
+                    <li>دقة التصوير <span>1080p</span></li>
+                    <li>الرؤية الليلية <span>20 متر</span></li>
+                    <li>زاوية الرؤية <span>120 درجة</span></li>
+                    <li>التكبير <span>10x</span></li>
+                </ul>
+            </div>
+            <div class="spec-card">
+                <h3><i class="fas fa-battery-full"></i> الطاقة</h3>
+                <ul class="spec-list">
+                    <li>البطارية <span>10000mAh</span></li>
+                    <li>الشحن الشمسي <span>6 ساعات</span></li>
+                    <li>مدة العمل <span>7 أيام</span></li>
+                    <li>الطاقة الاحتياطية <span>نعم</span></li>
+                </ul>
+            </div>
+            <div class="spec-card">
+                <h3><i class="fas fa-wifi"></i> الاتصال</h3>
+                <ul class="spec-list">
+                    <li>الشبكة <span>4G</span></li>
+                    <li>التطبيق <span>iOS & Android</span></li>
+                    <li>التخزين <span>64GB</span></li>
+                    <li>التحديثات <span>تلقائية</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App Section -->
+    <section class="mobile-app">
+        <div class="section-title">
+            <h2>تطبيق الهاتف</h2>
+            <p>تحكم كامل في راحة يدك</p>
+        </div>
+        <div class="app-grid">
+            <div class="app-preview">
+                <img src="images/Phone-app.png" alt="تطبيق الهاتف">
+                <div class="qr-code">
+                    <img src="images/frame.png" alt="QR Code">
+                    <p>صور الرمز</p>
+                </div>
+            </div>
+            <div class="app-features">
+                <h3>مميزات التطبيق</h3>
+                <ul class="feature-list">
+                    <li>
+                        <i class="fas fa-video"></i>
+                        <span>مراقبة مباشرة 24/7</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-bell"></i>
+                        <span>تنبيهات فورية</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-cloud"></i>
+                        <span>تخزين سحابي</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-share-alt"></i>
+                        <span>مشاركة الصور والفيديو</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-cog"></i>
+                        <span>تحكم في الإعدادات</span>
+                    </li>
+                </ul>
+                <div class="app-badges">
+                    <div class="app-badge">
+                        <i class="fab fa-google-play"></i>
+                        <span>Google Play</span>
+                    </div>
+                    <div class="app-badge">
+                        <i class="fab fa-app-store"></i>
+                        <span>App Store</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="section-title">
+            <h2>مميزات الكاميرا</h2>
+            <p>تكنولوجيا متطورة لحماية متكاملة</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card fade-in">
+                <i class="fas fa-sun"></i>
+                <h3>طاقة شمسية</h3>
+                <p>تعمل بالطاقة الشمسية بدون الحاجة للكهرباء</p>
+            </div>
+            <div class="feature-card fade-in">
+                <i class="fas fa-video"></i>
+                <h3>رؤية ليلية</h3>
+                <p>تصوير واضح ليلاً ونهاراً</p>
+            </div>
+            <div class="feature-card fade-in">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>مراقبة عن بعد</h3>
+                <p>تابع منزلك من أي مكان عبر الهاتف</p>
+            </div>
+            <div class="feature-card fade-in">
+                <i class="fas fa-wifi"></i>
+                <h3>4G مدمج</h3>
+                <p>تعمل بدون واي فاي عبر شبكة 4G</p>
+            </div>
+            <div class="feature-card fade-in">
+                <i class="fas fa-shield-alt"></i>
+                <h3>مقاومة للعوامل الجوية</h3>
+                <p>مقاومة للماء والغبار والرياح</p>
+            </div>
+            <div class="feature-card fade-in">
+                <i class="fas fa-battery-full"></i>
+                <h3>بطارية قوية</h3>
+                <p>تعمل لمدة طويلة بدون شحن</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="section-title">
+            <h2>الأسئلة الشائعة</h2>
+            <p>إجابات على أكثر الأسئلة تكراراً</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    هل تعمل الكاميرا بدون واي فاي؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">نعم، تعمل بالشبكة الخلوية 4G المدمجة</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    كيف يتم الشحن؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">تتم الشحن تلقائياً بالطاقة الشمسية</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    هل يمكن تركيبها في الخارج؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">نعم، مقاومة للماء والغبار والرياح</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    ما هي مدة الضمان؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">ضمان سنة كاملة مع خدمة ما بعد البيع</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    كيف يمكنني متابعة الكاميرا؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">يمكنك متابعة الكاميرا عبر تطبيق خاص على هاتفك</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-title">
+            <h2>آراء العملاء</h2>
+            <p>ماذا يقول عملاؤنا عن منتجاتنا</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <img src="https://placehold.co/100x100/2ecc71/ffffff?text=User+1" alt="User 1">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"كاميرا ممتازة وتعمل بشكل جيد مع الطاقة الشمسية. جودة الصورة عالية والمراقبة عن بعد سهلة"</p>
+                <h4>أحمد محمد</h4>
+                <div class="location">الدار البيضاء</div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <img src="https://placehold.co/100x100/2ecc71/ffffff?text=User+2" alt="User 2">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"خدمة توصيل سريعة وجودة عالية. الكاميرا تعمل بشكل ممتاز حتى في الظروف الجوية الصعبة"</p>
+                <h4>فاطمة الزهراء</h4>
+                <div class="location">الرباط</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <a href="#" class="logo">
+                    <img src="https://placehold.co/200x80/2ecc71/ffffff?text=CAMEMAROC" alt="CAMEMAROC Logo">
+                </a>
+                <h3>تواصل معنا</h3>
+                <p>هاتف: 06XXXXXXXX</p>
+                <p>البريد الإلكتروني: camemaroc@gmail.com</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <a href="#orderForm">طلب الكاميرا</a>
+                <a href="#features">المميزات</a>
+                <a href="#faq">الأسئلة الشائعة</a>
+                <a href="#testimonials">آراء العملاء</a>
+            </div>
+            <div class="footer-section">
+                <h3>الدفع والتوصيل</h3>
+                <p>الدفع عند الاستلام</p>
+                <p>توصيل مجاني</p>
+                <p>ضمان سنة</p>
+                <p>هدية مجانية مع كل طلب</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat -->
+    <div class="live-chat">
+        <i class="fas fa-comments"></i>
+        <span>دردشة مباشرة</span>
+    </div>
+
+    <!-- Sticky WhatsApp -->
+    <a href="https://wa.me/212XXXXXXXXX" class="sticky-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Sticky Order Button -->
+    <a href="#orderForm" class="sticky-order">اطلب الآن</a>
+
+    <script>
+        // Form Handling
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const submitBtn = form.querySelector('.submit-btn');
+            const formMessage = form.querySelector('.form-message');
+            const originalText = submitBtn.textContent;
+            
+            // Basic validation
+            const inputs = form.querySelectorAll('input[required]');
+            let isValid = true;
+            
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    isValid = false;
+                    input.style.borderColor = 'var(--accent-color)';
+                } else {
+                    input.style.borderColor = '';
+                }
+            });
+            
+            if (!isValid) {
+                showMessage(form, 'error', 'يرجى ملء جميع الحقول المطلوبة');
+                return;
+            }
+            
+            // Show loading state
+            submitBtn.textContent = 'جاري الإرسال...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                // Success state
+                showMessage(form, 'success', 'تم إرسال طلبك بنجاح! سنتواصل معك قريباً');
+                form.reset();
+                
+                // Reset button
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            }, 1500);
+        });
+
+        function showMessage(form, type, message) {
+            let formMessage = form.querySelector('.form-message');
+            if (!formMessage) {
+                formMessage = document.createElement('div');
+                formMessage.className = 'form-message';
+                form.appendChild(formMessage);
+            }
+            
+            formMessage.className = `form-message ${type}`;
+            formMessage.textContent = message;
+            formMessage.style.display = 'block';
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 5000);
+        }
+
+        // Input validation on blur
+        document.querySelectorAll('.form-group input').forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.value.trim()) {
+                    this.style.borderColor = 'var(--primary-color)';
+                } else {
+                    this.style.borderColor = '';
+                }
+            });
+        });
+
+        // Enhanced Gallery Interaction
+        document.querySelectorAll('.gallery-thumb').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                const mainImg = document.querySelector('.gallery-main img');
+                const newSrc = this.querySelector('img').src;
+                
+                // Add fade effect
+                mainImg.style.opacity = '0';
+                
+                setTimeout(() => {
+                    mainImg.src = newSrc;
+                    mainImg.style.opacity = '1';
+                }, 300);
+                
+                // Update active state
+                document.querySelector('.gallery-thumb.active').classList.remove('active');
+                this.classList.add('active');
+            });
+        });
+
+        // Enhanced Scroll Behavior
+        let lastScroll = 0;
+        const header = document.querySelector('.header');
+        const scrollThreshold = 100;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            // Header visibility
+            if (currentScroll > scrollThreshold) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            // Smooth scroll for anchor links
+            if (currentScroll < lastScroll) {
+                header.classList.add('scroll-up');
+                header.classList.remove('scroll-down');
+            } else {
+                header.classList.remove('scroll-up');
+                header.classList.add('scroll-down');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Enhanced Loading Performance
+        document.addEventListener('DOMContentLoaded', () => {
+            // Preload critical images
+            const images = document.querySelectorAll('img[data-src]');
+            images.forEach(img => {
+                img.src = img.dataset.src;
+            });
+            
+            // Remove loading screen
+            setTimeout(() => {
+                document.querySelector('.loading').classList.add('hidden');
+            }, 500);
+        });
+
+        // Enhanced Error Handling
+        window.onerror = function(msg, url, lineNo, columnNo, error) {
+            console.error('Error: ' + msg + '\nURL: ' + url + '\nLine: ' + lineNo + '\nColumn: ' + columnNo + '\nError object: ' + JSON.stringify(error));
+            return false;
+        };
+
+        // Fixed Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const currentHours = now.getHours();
+            const currentMinutes = now.getMinutes();
+            
+            // Calculate next 8:30 interval
+            let targetHours = currentHours;
+            let targetMinutes = 30;
+            
+            // If current time is past 8:30, move to next interval
+            if (currentHours % 8 >= 8 || (currentHours % 8 === 7 && currentMinutes >= 30)) {
+                targetHours = Math.ceil(currentHours / 8) * 8;
+            } else {
+                targetHours = Math.floor(currentHours / 8) * 8 + 8;
+            }
+            
+            const targetTime = new Date(now);
+            targetTime.setHours(targetHours, targetMinutes, 0, 0);
+            
+            // If target time is in the past, add 8 hours
+            if (targetTime <= now) {
+                targetTime.setHours(targetTime.getHours() + 8);
+            }
+            
+            const distance = targetTime - now;
+            
+            // Calculate time units
+            const hoursLeft = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutesLeft = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const secondsLeft = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Update DOM
+            document.getElementById('hours').textContent = hoursLeft.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutesLeft.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = secondsLeft.toString().padStart(2, '0');
+            
+            // Add animation class when time is running low
+            const countdownItems = document.querySelectorAll('.countdown-item');
+            if (hoursLeft === 0 && minutesLeft < 5) {
+                countdownItems.forEach(item => item.classList.add('urgent'));
+            } else {
+                countdownItems.forEach(item => item.classList.remove('urgent'));
+            }
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+
+        // Fade in animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Live Chat
+        document.querySelector('.live-chat').addEventListener('click', function() {
+            // Add chat implementation
+            alert('سيتم فتح الدردشة المباشرة');
+        });
+
+        // Quantity and Price Handling
+        const basePrice = 1049;
+        const quantityInput = document.getElementById('quantity');
+        const discountBadge = document.getElementById('discountBadge');
+        const currentPriceElement = document.querySelector('.current-price');
+
+        function updatePrice() {
+            const quantity = parseInt(quantityInput.value);
+            const compareAtPrice = 1299;
+            const basePrice = 1049;
+            
+            let finalPrice = basePrice * quantity;
+            let totalComparePrice = compareAtPrice * quantity;
+            let discount = 0;
+
+            // Show/hide popular choice label
+            const popularLabel = document.querySelector('.popular-choice-label');
+            if (quantity === 2) {
+                popularLabel.classList.add('show');
+            } else {
+                popularLabel.classList.remove('show');
+            }
+
+            if (quantity === 2) {
+                discount = 100;
+            } else if (quantity >= 3) {
+                discount = 150;
+            }
+
+            finalPrice -= discount;
+
+            // Update price display with animation
+            const priceElement = document.querySelector('.current-price');
+            const compareElement = document.querySelector('.compare-price');
+            
+            // Fade out
+            priceElement.style.opacity = '0';
+            compareElement.style.opacity = '0';
+            
+            setTimeout(() => {
+                // Update prices
+                compareElement.textContent = `${totalComparePrice} درهم`;
+                priceElement.textContent = `${finalPrice} درهم`;
+                
+                // Fade in
+                priceElement.style.opacity = '1';
+                compareElement.style.opacity = '0.8';
+            }, 200);
+
+            // Update discount badge with animation
+            if (discount > 0) {
+                discountBadge.textContent = `خصم ${discount} درهم على الطلب`;
+                discountBadge.classList.add('show');
+            } else {
+                discountBadge.classList.remove('show');
+            }
+        }
+
+        function increaseQuantity() {
+            const currentValue = parseInt(quantityInput.value);
+            quantityInput.value = currentValue + 1;
+            updatePrice();
+            
+            // Add animation to the plus button
+            const plusBtn = document.querySelector('.quantity-btn:last-child');
+            plusBtn.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                plusBtn.style.transform = '';
+            }, 100);
+        }
+
+        function decreaseQuantity() {
+            const currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+                updatePrice();
+                
+                // Add animation to the minus button
+                const minusBtn = document.querySelector('.quantity-btn:first-child');
+                minusBtn.style.transform = 'scale(0.9)';
+                setTimeout(() => {
+                    minusBtn.style.transform = '';
+                }, 100);
+            }
+        }
+
+        // Initialize price
+        updatePrice();
+
+        // Form Submission to Google Sheets
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw2liJ7mHQHeA3L2HfxB2UQNBDyx9pG4jWJyA0El8DTQoQ5mywALjxhRDKhFiGsU_I-Ew/exec';
+
+        async function submitForm(e) {
+            e.preventDefault();
+            
+            const form = document.getElementById('orderForm');
+            const submitBtn = form.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            
+            // Basic validation
+            const inputs = form.querySelectorAll('input[required]');
+            let isValid = true;
+            
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    isValid = false;
+                    input.style.borderColor = 'var(--accent-color)';
+                } else {
+                    input.style.borderColor = '';
+                }
+            });
+            
+            if (!isValid) {
+                showMessage(form, 'error', 'يرجى ملء جميع الحقول المطلوبة');
+                return;
+            }
+
+            // Show loading state
+            submitBtn.textContent = 'جاري الإرسال...';
+            submitBtn.disabled = true;
+
+            try {
+                // Create FormData object
+                const formData = new FormData();
+                formData.append('fullName', document.getElementById('fullName').value);
+                formData.append('phone', document.getElementById('phone').value);
+                formData.append('address', document.getElementById('address').value);
+                formData.append('quantity', document.getElementById('quantity').value);
+                formData.append('totalPrice', document.querySelector('.current-price').textContent);
+                formData.append('timestamp', new Date().toLocaleString('ar-MA'));
+                formData.append('discount', document.getElementById('discountBadge').textContent || 'لا يوجد خصم');
+
+                // Send the form data
+                const response = await fetch(scriptURL, {
+                    method: 'POST',
+                    body: formData,
+                    mode: 'no-cors' // Important for Google Apps Script
+                });
+
+                // Since we're using no-cors, we can't check response.ok
+                // Instead, we'll assume success if no error is thrown
+                showMessage(form, 'success', 'تم إرسال طلبك بنجاح! سنتواصل معك قريباً');
+                form.reset();
+                updatePrice(); // Reset price after form submission
+
+            } catch (error) {
+                console.error('Error:', error);
+                showMessage(form, 'error', 'حدث خطأ أثناء إرسال الطلب. يرجى المحاولة مرة أخرى');
+            } finally {
+                // Reset button
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        }
+
+        // Add this function to show messages
+        function showMessage(form, type, message) {
+            let formMessage = form.querySelector('.form-message');
+            if (!formMessage) {
+                formMessage = document.createElement('div');
+                formMessage.className = 'form-message';
+                form.appendChild(formMessage);
+            }
+            
+            formMessage.className = `form-message ${type}`;
+            formMessage.textContent = message;
+            formMessage.style.display = 'block';
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
